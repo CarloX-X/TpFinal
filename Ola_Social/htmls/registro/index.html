@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleRegistro.css">
+</head>
+<body>
+
+    <h1>Gracias x unirte</h1>
+    <h2>Completar Registro</h2>
+    <form id="formulario-registro">
+        <input class="nombre" type="text" name="Nombre" id="nombre-input" required placeholder="Nombre">
+        <input class="usuario" type="text" name="Usuario" id="usuario-input" required placeholder="Usuario">
+        <input class="mail" type="text" name="Correo Electrónico" id="email-input" required placeholder="Correo Electrónico">
+        <input class="contrasenia" type="password" name="Contrasenia" id="password-input" required placeholder="Contraseña">
+        <input class="foto" type="text" name="foto" id="foto-input" placeholder="Dirección de la foto">
+        <input onclick="redirrecionar()" id="registrarse" type="submit" class="registrarse" value="Registrarse">
+    </form>
+    <script type="module" src="mainRegistro.js"></script>
+</body>
+</html>

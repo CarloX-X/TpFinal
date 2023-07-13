@@ -1,0 +1,527 @@
+body{
+  overflow: hidden;
+  background-image: url(../../fondoResolucionNormal.jpg);
+}
+.contornoBusqueda{
+  position: absolute;
+  margin-left: 43%;
+  margin-top: -60px;
+}
+
+.stylo-input-busqueda {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.stylo-input-busqueda::placeholder {
+  color: #999;
+}
+.boton-input-busqueda {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+}
+
+.boton-input-busqueda:hover {
+  background-color: #ccc;
+}
+.fotoPerfil {
+  width: 150px;
+  height: 158.73px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  margin-left: 12px;
+  position: relative;
+  top: -80px;
+}
+
+.fecha {
+  font-size: 10px;
+  color: gray;
+  align-self: flex-end;
+}
+
+.nombre-usuario {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.fotoPerfil-comentario {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.style-miniPerfil {
+  width: 20%;
+  max-width: 174px;
+  height: 240px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: 1px solid #8b7373;
+  background: #FFF;
+  position: absolute;
+  top: 130px;
+  left: 20%;
+  float: none;
+  flex-shrink: 0;
+}
+
+.recuadroUsuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #277db6;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: -70px;
+  margin-left: 9%;
+}
+
+.ventanaEscribir {
+  width: 100%;
+  max-width: 790px;
+  height: 275px;
+  margin-top: 100px;
+  margin-left: 580px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: #FFF;
+  float: none;
+}
+
+.publicar-input-stylo {
+  display: flex;
+  width: 693px;
+  height: 90px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  margin-left: 11px;
+}
+
+.recuadroPublicar {
+  width: 724px;
+  height: 131px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #FFF;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.publicar {
+  width: 147px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #FFF;
+  position: relative;
+  margin-top: 65px;
+  margin-left: 270px;
+}
+
+.lista-comentarios {
+  background: #ffffff;
+  width: 720px;
+ 
+}
+
+.comentario {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.comentario .fotoPerfil-comentario {
+  grid-row: 1 / span 2;
+  align-self: start;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenedor-comentarios {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  height: 600px;
+  width: 750px;
+  overflow: auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 590px;
+  margin-top: 10px;
+ 
+}
+
+.seguidores{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  height: 50px;
+  width: 75%;
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: #277db6;
+}
+.derecha{
+  order: 1;
+  margin-left: 25px;
+}
+.izquierda{
+  order: 2;
+  margin-right: 15px;
+}
+
+div {
+  border: 1px solid;
+}
+
+.input-container {
+  position: relative;
+  
+}
+
+.publicar-input-stylo {
+  width: 97%;
+  height: 90px;
+  color: #000000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+ border-radius: solid;
+border-radius: 10px;
+}
+
+.publicar-input-stylo::placeholder {
+  color: #888;
+  font-size: 28px;
+}
+
+.publicar-input-stylo:focus::placeholder {
+  color: transparent;
+  
+}
+.publicar {
+  margin-top: 60px;
+  margin-left: 300px;
+  background-color: #277db6;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.publicar:hover {
+  background-color: #1d628f;
+}
+.imagenUsuario{
+  width: 150px;
+  height: 158.73px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  margin-left: 12px;
+  position: relative;
+  top: -80px;
+}
+
+#resultadoUsuario  {
+  border: 1px solid black;
+  background: url(https://img.freepik.com/vector-gratis/onda-curvas-estilo-linea-movimiento-fluido-fondo-fondo_1017-43381.jpg?w=1380&t=st=1689228599~exp=1689229199~hmac=ff49ca269e6297517300a0248d6de3dddbc01af1bbee00dd4627d1bf98fa1e46);
+  height: 150px;
+  z-index: 9999;
+  position: relative;
+}
+#imagenUsuario{
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
+.nombreUsuarioStylo{
+  margin-left: 130px;
+  margin-top: -150px;
+}
+.cerrar {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+.seguir {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cerrar:hover, .seguir:hover {
+  opacity: 0.8;
+}
+.fotoComentario{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #3406ff;
+}
+
+.comentario {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(3, 89, 168);
+  border: 1px solid;
+  width: 80%;
+  height: 100px;
+  margin-left: 60px;
+}
+.miClaseContenido{
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  height: 50px;
+  width: 400px;
+  margin-left: 80px;
+  margin-top: -110px;
+
+  border-radius: 10px;
+
+}
+.miClaseUsuario{
+  width: 130px;
+  margin-top: 70px;
+
+  margin-left: -80px;
+}
+.miClaseFecha{
+
+  width: 230px;
+  margin-left: 270px;
+  margin-top: -40px;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body{
+    background-image: url('../../fondoResolucionChica.jpg');
+  }
+  .style-miniPerfil {
+    width: 90%;
+    max-width: 1000px;
+    height: 180px;
+    margin-left: -65px;
+  }
+  .recuadroUsuario {
+    width: 50%;
+    max-width: 200px;
+  }
+  .fotoPerfil {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    margin-left: 120px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .recuadroUsuario {
+    height: 30px;
+    width: 150px;
+    margin-left: 100px;
+  }
+  .seguidores {
+    width: 170px;
+    margin-left: 90px;
+  }
+  .derecha {
+    order: 1;
+    margin-left: 35px;
+  }
+  .izquierda {
+    order: 2;
+    margin-right: 30px;
+  }
+  .ventanaEscribir {
+    width: 100%;
+    max-width: 790px;
+    height: 125px;
+    margin-top: 320px;
+    margin-left: 0px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid #000;
+    background: #FFF;
+    float: none;
+  }
+  .publicar-input-stylo {
+    height: 50px;
+    width: 94%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  .publicar-input-stylo:focus {
+    border-color: #0066cc;
+    outline: none;
+  }
+  .publicar {
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  .contenedor-comentarios {
+    height: 380px;
+    width: 350px;
+    margin-left: 0px;
+    margin-top: 10px;
+    border: none;
+  }
+  
+
+  .contornoBusqueda{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -290px;
+  }
+  .stylo-input-busqueda {
+    padding: 10px;
+    font-size: 16px;
+    width: 160px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-right: 5px;
+  }
+  
+  .stylo-input-busqueda::placeholder {
+    color: #999;
+  }
+  .boton-input-busqueda {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .boton-input-busqueda:hover {
+    background-color: #ccc;
+  }
+  .lista-comentarios {
+    background: none;
+    width: 350px;
+    border: none;
+  }
+
+  .miClaseContenido{
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  height: 50px;
+  width: 400px;
+  margin-left: 80px;
+  margin-top: -110px;
+
+  border-radius: 10px;
+
+}
+.miClaseUsuario{
+  width: 130px;
+  margin-top: 70px;
+
+  margin-left: -80px;
+}
+.miClaseFecha{
+
+  width: 230px;
+  margin-left: 270px;
+  margin-top: 85px;
+
+}
+
+.comentario {
+  width: 80%;
+  height: 60px;
+  margin-left: 25px;
+}
+.miClaseContenido{
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 100%;
+}
+.miClaseUsuario{
+  display: none;
+}
+.miClaseFecha{
+
+  display: none;
+
+}
+}
+
+
+
+

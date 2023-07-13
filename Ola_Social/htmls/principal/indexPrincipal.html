@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="indexCSS.css">
+</head>
+<body>
+
+  <section class="contornoBusqueda">
+  <input  class="stylo-input-busqueda"  type="text" id="inputUsuario" placeholder="Seguir por usuario">
+  <button class="boton-input-busqueda" onclick="buscarUsuario()">Buscar</button>
+
+  <div id="resultadoUsuario" style="display: none;">
+    <img id="imagenUsuario" class="imagenUsuario" alt="Foto de usuario">
+    <h2 id="nombreUsuario" class="nombreUsuarioStylo"></h2>
+    <button class = "cerrar" id="cerrar">x</button>
+    <button onclick="seguirUsuario()" class="seguir">Seguir</button>
+  </div>
+
+  </section>
+
+  <section class="style-miniPerfil">
+    <img class="fotoPerfil" id="foto-dato" alt="Foto de perfil">
+    <span class="recuadroUsuario" id="usuario-dato"></span>
+    
+    <div class="seguidores">
+      <p class="derecha" id="nombreUsuario"></p>
+      <p class="izquierda" id="seguidoresUsuario"></p>
+    </div>
+
+  </section>
+  
+  <section class="ventanaEscribir" id="Publicar">
+    <form id="FormularioComentario">
+      
+        <input class="publicar-input-stylo" type="text" name="Contenido" id="Contenido_input" placeholder="Escribi lo que quieras">
+      
+      <button class="publicar">Publicar</button>
+    </form>
+
+  </section>
+  
+  
+  <section class="contenedor-comentarios">
+    <div class="lista-comentarios" id="comentarios-container">
+      <!-- aca van los elementos de comentarios -->
+    </div>
+  </section>
+  
+  <script src="jsPrincipal.js"></script>
+</body>
+</html>
